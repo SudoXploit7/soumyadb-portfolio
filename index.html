@@ -1134,34 +1134,34 @@ footer{
     <div class="exp-timeline">
 
       <div class="exp-item fade-up">
+        <div class="exp-date">May 2026<br>Aug 2026</div>
+        <div class="exp-content">
+          <div class="exp-title">Network Security Intern</div>
+          <div class="exp-company">
+            <span class="exp-company-name">IFSCA — International Financial Services Centres Authority</span>
+            <span class="exp-badge green">Network Security</span>
+          </div>
+          <ul class="exp-list">
+            <li>Contributed to cybersecurity and network security architecture initiatives within India's premier IFSC regulatory authority, supporting the security posture of critical financial services infrastructure.</li>
+            <li>Configured and deployed Wazuh (open-source SIEM/XDR) end-to-end — covering agent deployment across endpoints, log ingestion pipeline setup, custom alerting rules, and interactive dashboard configuration for continuous monitoring.</li>
+            <li>Assisted in network security assessment activities, reviewing existing architecture for compliance gaps and recommending hardening measures aligned with financial sector security standards and regulatory requirements.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item fade-up">
         <div class="exp-date">May 2024<br>Jun 2024</div>
         <div class="exp-content">
-          <div class="exp-title">SOC L1 Analyst Intern</div>
+          <div class="exp-title">Managed Security Analyst Intern</div>
           <div class="exp-company">
-            <span class="exp-company-name">RockLadder Technologies</span>
-            <span class="exp-badge green">Security Operations</span>
+            <span class="exp-company-name">RockLadder Technologies — Security Operations Center</span>
+            <span class="exp-badge green">SOC Operations</span>
           </div>
           <ul class="exp-list">
             <li>Monitored and triaged security alerts in real time using FortiSIEM, performing rule-based and behavioural log analysis across network, endpoint, and application event sources to detect and classify potential incidents.</li>
             <li>Reduced false positive rates through systematic alert tuning; documented triage decisions and escalation criteria to improve SOC runbook accuracy for recurring alert patterns.</li>
             <li>Supported NOC operations alongside SOC duties — network performance monitoring, multi-source event correlation, and timely escalation of confirmed incidents to senior L2 analysts.</li>
             <li>Gained end-to-end exposure to the SOC incident lifecycle: initial detection and triage through containment recommendation and post-incident documentation, within a live production environment.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item fade-up">
-        <div class="exp-date">Network Security<br>Internship</div>
-        <div class="exp-content">
-          <div class="exp-title">Network Security Intern</div>
-          <div class="exp-company">
-            <span class="exp-company-name">IFSCA (International Financial Services Centres Authority)</span>
-            <span class="exp-badge">Network Security</span>
-          </div>
-          <ul class="exp-list">
-            <li>Contributed to cybersecurity and network security architecture initiatives within India's premier IFSC regulatory authority.</li>
-            <li>Configured and deployed Wazuh (open-source SIEM/XDR) for IFSCA's security monitoring infrastructure — covering log ingestion, agent deployment, alerting rules, and dashboard setup.</li>
-            <li>Assisted in network security assessment activities, reviewing architecture for compliance gaps and recommending hardening measures aligned with financial sector security standards.</li>
           </ul>
         </div>
       </div>
@@ -1296,10 +1296,10 @@ footer{
         <div class="t-out">&nbsp;&nbsp;soumyadipta_birabar // cybersecurity_engineer</div>
         <div><span class="t-prompt">▸ </span><span class="t-cmd">cat current_focus.json</span></div>
         <div class="t-out">&nbsp;&nbsp;{</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">"primary"</span>: <span class="t-val">"Cloud IAM attack path analysis (PRISM)"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">"primary"</span>: <span class="t-val">"Adversary emulation &amp; purple team automation (Ares)"</span>,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">"learning"</span>: <span class="t-val">"Advanced threat hunting, malware analysis"</span>,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">"practicing"</span>: <span class="t-val">"HackTheBox Pro Labs, PortSwigger Web Academy"</span>,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">"open_to"</span>: <span class="t-val">"SOC roles, security research, internships"</span></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">"open_to"</span>: <span class="t-val">"VAPT, Security Engineer, Security Analyst, Cloud Security, Security Research"</span></div>
         <div class="t-out">&nbsp;&nbsp;}</div>
         <div><span class="t-prompt">▸ </span><span class="t-cmd">locate platforms.db</span></div>
         <div class="t-out">&nbsp;&nbsp;[✓] TryHackMe — <span class="t-val">Global Top 1%</span> | HackTheBox — <span class="t-val">Active</span></div>
@@ -1318,18 +1318,19 @@ footer{
 
       <div class="proj-card featured fade-up">
         <div class="proj-header">
-          <div class="proj-icon pi-green"><i class="fas fa-search"></i></div>
+          <div class="proj-icon pi-green"><i class="fas fa-eye"></i></div>
           <div class="proj-links-top">
-            <a href="https://github.com/SudoXploit7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/SudoXploit7/PRISM" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="proj-body">
-          <span class="proj-status ps-active">ACTIVE</span>
+          <span class="proj-status ps-done">COMPLETED</span>
           <div class="proj-name">PRISM</div>
-          <p class="proj-desc">Cloud IAM Privilege Escalation Analyzer. Graph-based AWS IAM attack path discovery engine — detects MFA bypass, shadow admins, lateral movement chains, credential exposure, and EC2/S3 abuse vectors. Features CVSS-aligned risk scoring to prioritize remediation across complex enterprise IAM postures.</p>
+          <p class="proj-desc">Purple-team AWS security assessment framework that maps, analyzes, and visualizes cloud environments from an attacker's perspective — without touching a single resource. Performs read-only analysis via boto3, computing the Minimum Viable Compromise (MVC) path to Account Admin using BFS across 21 documented IAM escalation techniques. Features Ghost Identity Detector, Temporal Kill Chain, Permission Entropy Engine, Blast Radius 3D (5-dimensional impact scoring), and an Attack Narrative Generator — capabilities with no equivalent in existing open-source tools like Prowler or ScoutSuite. Real-time WebSocket dashboard with vis.js attack graph visualization and CVSS v3.1 scoring.</p>
           <div class="proj-tech">
-            <span class="ptag">Python</span><span class="ptag">AWS IAM</span><span class="ptag">Graph Analysis</span>
-            <span class="ptag">CVSS Scoring</span><span class="ptag">Privilege Escalation</span><span class="ptag">Cloud Security</span>
+            <span class="ptag">Python</span><span class="ptag">AWS boto3</span><span class="ptag">Flask-SocketIO</span>
+            <span class="ptag">NetworkX</span><span class="ptag">CVSS v3.1</span><span class="ptag">IAM Attack Paths</span>
+            <span class="ptag">BFS / Graph Analysis</span><span class="ptag">ReportLab PDF</span>
           </div>
         </div>
       </div>
@@ -1338,16 +1339,17 @@ footer{
         <div class="proj-header">
           <div class="proj-icon pi-cyan"><i class="fas fa-brain"></i></div>
           <div class="proj-links-top">
-            <a href="https://github.com/SudoXploit7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/SudoXploit7/DefenSight-AI" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="proj-body">
           <span class="proj-status ps-done">COMPLETED</span>
           <div class="proj-name">DefenSight AI</div>
-          <p class="proj-desc">RAG-based Security Log Analysis Platform. Transforms raw firewall, IDS, and network logs into actionable threat intelligence using Retrieval-Augmented Generation and LLMs. Supports real-time analyst decision-making and automated triage — dramatically cutting mean-time-to-respond during active incidents.</p>
+          <p class="proj-desc">Autonomous Network Defense Copilot — an AI-powered security log analysis platform that transforms raw firewall, IDS, and network logs into actionable intelligence using RAG and LLMs. Multi-format ingestion (CSV, XML, JSON, LOG, TXT), intelligent normalization with automatic type detection, semantic search via 768-dimensional vector embeddings (ChromaDB + HNSW), and Groq LLaMA 3.3 70B integration with 128k context. Generates technical and executive summaries, exports PDF reports, delivers email-based report delivery, and provides an interactive SOC chat assistant — all behind a multi-user Flask auth system with bcrypt hashing.</p>
           <div class="proj-tech">
-            <span class="ptag">Python</span><span class="ptag">RAG</span><span class="ptag">LLM</span>
-            <span class="ptag">SIEM Integration</span><span class="ptag">Threat Intelligence</span><span class="ptag">AI/ML</span>
+            <span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">RAG</span>
+            <span class="ptag">ChromaDB</span><span class="ptag">Groq LLaMA 3.3 70B</span><span class="ptag">SentenceTransformers</span>
+            <span class="ptag">Flask-Login</span><span class="ptag">ReportLab</span>
           </div>
         </div>
       </div>
@@ -1356,16 +1358,17 @@ footer{
         <div class="proj-header">
           <div class="proj-icon pi-green"><i class="fas fa-satellite"></i></div>
           <div class="proj-links-top">
-            <a href="https://github.com/SudoXploit7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/SudoXploit7/POLARIS" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="proj-body">
-          <span class="proj-status ps-active">ACTIVE</span>
+          <span class="proj-status ps-done">COMPLETED</span>
           <div class="proj-name">POLARIS</div>
-          <p class="proj-desc">Advanced threat intelligence and attack surface management platform. Aggregates open-source threat feeds, correlates IOCs across multiple data sources, and maps adversary TTPs to the MITRE ATT&CK framework — providing security teams with a structured, actionable intelligence picture.</p>
+          <p class="proj-desc">Policy Offline Lens for Assessment, Risk &amp; Improvement Scoring — an offline cybersecurity policy gap analysis engine for security teams, auditors, and compliance practitioners. Evaluates policy documents (TXT, PDF, DOCX) against structured frameworks (NIST CSF 2.0, ISO 27001:2022, SOC 2) using local semantic embeddings, producing deterministic scores, remediation roadmaps, rich terminal dashboards, JSON exports, and PDF reports — entirely offline, with zero external API calls during analysis. Optional LLM-enhanced improvement text via local Ollama. 80%+ test coverage.</p>
           <div class="proj-tech">
-            <span class="ptag">Python</span><span class="ptag">MITRE ATT&CK</span><span class="ptag">Threat Intel</span>
-            <span class="ptag">IOC Correlation</span><span class="ptag">OSINT</span><span class="ptag">REST APIs</span>
+            <span class="ptag">Python</span><span class="ptag">SentenceTransformers</span><span class="ptag">NIST CSF 2.0</span>
+            <span class="ptag">ISO 27001:2022</span><span class="ptag">SOC 2</span><span class="ptag">Click CLI</span>
+            <span class="ptag">Rich Terminal</span><span class="ptag">Ollama</span>
           </div>
         </div>
       </div>
@@ -1374,16 +1377,16 @@ footer{
         <div class="proj-header">
           <div class="proj-icon pi-cyan"><i class="fas fa-atom"></i></div>
           <div class="proj-links-top">
-            <a href="https://github.com/SudoXploit7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/SudoXploit7/QuantumShield" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="proj-body">
           <span class="proj-status ps-done">COMPLETED</span>
           <div class="proj-name">QuantumShield</div>
-          <p class="proj-desc">Post-quantum cryptography research and implementation framework exploring quantum-resistant algorithms for enterprise security infrastructure. Evaluates NIST PQC candidates and provides practical implementation guidance for transitioning legacy cryptographic systems.</p>
+          <p class="proj-desc">Post-quantum cryptography research and implementation framework exploring quantum-resistant algorithms for enterprise security infrastructure. Evaluates NIST PQC candidates (CRYSTALS-Kyber, CRYSTALS-Dilithium, FALCON, SPHINCS+) and provides practical implementation guidance for transitioning legacy cryptographic systems to quantum-safe alternatives — bridging the gap between academic PQC research and real-world deployment readiness.</p>
           <div class="proj-tech">
             <span class="ptag">Python</span><span class="ptag">Post-Quantum Crypto</span><span class="ptag">NIST PQC</span>
-            <span class="ptag">Cryptography</span><span class="ptag">Security Research</span>
+            <span class="ptag">CRYSTALS-Kyber</span><span class="ptag">CRYSTALS-Dilithium</span><span class="ptag">Security Research</span>
           </div>
         </div>
       </div>
@@ -1398,7 +1401,7 @@ footer{
         <div class="proj-body">
           <span class="proj-status ps-wip">IN PROGRESS</span>
           <div class="proj-name">Ares</div>
-          <p class="proj-desc">Autonomous adversarial emulation and purple team automation framework. Ares simulates multi-stage attack chains — from initial access through lateral movement and data exfiltration — mapped to MITRE ATT&CK, enabling defensive teams to continuously validate detection coverage and tune SIEM rules against realistic adversary behavior. Designed for use in controlled lab environments and red team / blue team exercises.</p>
+          <p class="proj-desc">Autonomous adversarial emulation and purple team automation framework. Ares simulates multi-stage attack chains — from initial access through lateral movement and data exfiltration — mapped to the MITRE ATT&amp;CK framework, enabling defensive teams to continuously validate detection coverage and tune SIEM rules against realistic adversary behaviour. Designed for controlled red team / blue team exercises and SOC detection validation workflows.</p>
           <div class="proj-tech">
             <span class="ptag">Python</span><span class="ptag">MITRE ATT&CK</span><span class="ptag">Purple Team</span>
             <span class="ptag">Adversary Emulation</span><span class="ptag">SIEM Validation</span><span class="ptag">Threat Simulation</span><span class="ptag">Automation</span>
